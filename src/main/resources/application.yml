@@ -33,6 +33,11 @@ spring:
         max-idle: 5
         # 连接池中的最小空闲连接
         min-idle: 0
+  # spring cache
+  cache:
+    redis:
+      # 缓存数据过期时间
+      time-to-live: 1800000
 mybatis-plus:
   configuration:
     #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
